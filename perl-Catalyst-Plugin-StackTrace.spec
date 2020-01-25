@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Catalyst
 %define	pnam	Plugin-StackTrace
 Summary:	Catalyst::Plugin::StackTrace - Display a stack trace on the debug screen

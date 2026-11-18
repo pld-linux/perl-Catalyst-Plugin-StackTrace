@@ -7,19 +7,23 @@
 Summary:	Catalyst::Plugin::StackTrace - Display a stack trace on the debug screen
 #Summary(pl.UTF-8):	
 Name:		perl-Catalyst-Plugin-StackTrace
-Version:	0.11
+Version:	0.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d4d99a35a9ded71c249e1742671cec76
+# Source0-md5:	f089320a66b085f6ee087c990bdccf6c
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-StackTrace/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Catalyst >= 5.70
 BuildRequires:	perl-Devel-StackTrace
+BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-MRO-Compat >= 0.10
+BuildRequires:	perl-Moose
+BuildRequires:	perl-namespace-autoclean
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
